@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photon Chat Room</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photon/0.1.2-alpha/css/photon.min.css">
 </head>
 <body>
-    <div id="chat-container">
-        <div id="chat-messages"></div>
-        <input type="text" id="message-input" placeholder="Type your message...">
-        <button onclick="sendMessage()">Send</button>
+    <div class="window">
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane-sm sidebar">
+                    <!-- Sidebar content (user list, channels, etc.) -->
+                </div>
+                <div class="pane">
+                    <div class="chat-messages">
+                        <!-- Display chat messages here -->
+                    </div>
+                    <form class="chat-form">
+                        <input type="text" placeholder="Type your message...">
+                        <button class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/photon-sdk@4.1.2/dist/photon-sdk.min.js"></script>
-    <script src="chat.js"></script>
 </body>
 </html>
+
