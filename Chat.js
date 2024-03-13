@@ -1,5 +1,5 @@
 // chat.js
-const chatAppId = 'YOUR_PHOTON_APP_ID'; // Replace with your actual AppId
+const chatAppId = '605319aa-197a-4ff7-9c0c-aca256244cd3'; // Replace with your actual AppId
 const chatClient = new Photon.Chat.ChatClient();
 
 // Connect to Photon Chat
